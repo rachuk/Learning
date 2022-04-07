@@ -4,6 +4,7 @@
      <div style = "color: blue">Синий текст</div>
     <?php
     } else {
+        die;
         ?>
     <div style = "color: red">Красный текст</div>
     <?php
