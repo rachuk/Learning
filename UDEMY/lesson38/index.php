@@ -31,9 +31,20 @@
 //    }
 //    echo sum(10, 12);
 
-    function outArguments(...$items) {
-        foreach ($items as $arg) {
-            echo "$arg<br>";
-        }
+//    function outArguments(...$items) {
+//        foreach ($items as $arg) {
+//            echo "$arg<br>";
+//        }
+//    }
+//    outArguments('PHP','JS','C++');
+
+
+    function outArguments($a, $b, $c, $d) {
+        echo "$a<br>";
+        echo "$b<br>";
+        echo "$c<br>";
+        echo "$d<br>";
     }
-    outArguments('PHP','JS','C++');
+
+    $items = ['PHP','JS','C++', 'Ruby'];
+    outArguments(...$items);
