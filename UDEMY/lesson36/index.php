@@ -1,17 +1,20 @@
 <?php
-    if (mt_rand(0,1)){
-        ?>
-     <div style = "color: blue">Синий текст</div>
-    <?php
-    } else {
-        die;
-        ?>
-    <div style = "color: red">Красный текст</div>
-    <?php
-}
+    $array = ['green', 'violet', 'blue', 'yellow', 'brown'];
+    echo $array[rand(0, count($array)-1)];
 
-function getCurrentYear() {
-    print_r(substr);
-}
-getCurrentYear();
-?>
+    echo '<br>';
+
+    $length = rand(5,10);
+    $array = [];
+    for ($i = 0; $i < $length; $i++) {
+        $array[$i] = rand(0,100);
+    }
+    sort($array);
+    echo '<pre>';
+    print_r($array);
+    echo '</pre>';
+
+    $arr = file('month.txt');
+    echo '<pre>';
+    print_r($arr);
+    echo '</pre>';
